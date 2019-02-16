@@ -4,22 +4,35 @@
 @import "parts/slider.less";
 @import "parts/form.less";
 @import "parts/photo-info.less";
+@import "parts/discount.less";
+@import "parts/courses.less";
 @import "parts/reviews.less";
+@import "parts/license.less";
 @import "parts/footer.less";
 
 /*main-screen*/ 
 
 .main-screen {
+	background: #113b7f;
 	position: relative;
 }
 
 .main-screen__info {
-	background: url(../images/figure-1.svg) no-repeat center left;
-	height: 100%;
-	width: 100%;
+	padding: 56px 0;
 	position: absolute;
-	top: 0;
-	left: 0;
+	width: 100%;
+    position: absolute;
+    top: 0;
+	z-index: 1;
+}
+
+.main-screen__figure-1 {
+    background: url(../images/figure-1.svg) no-repeat center right ;
+    height: 100%;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    right: 40%;
 }
 
 .logo {
@@ -33,11 +46,11 @@
     font-size: 18px;
     color: #fff;
     max-width: 300px;
-    margin: auto 0 auto 15px;;
+    margin: auto 0 auto 20px;;
 }
 
 .main-screen__button {
-	margin-top: 30px;
+	margin-top: 93px;
 }
 
 

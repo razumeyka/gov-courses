@@ -3,8 +3,9 @@
 @@include('template/head.html')
 <body class="home">
     @@include('template/header.html')
-    <div class="main-screen">
+    <div class="main-screen flex">	
     	@@include('template/slider.html')
+    	<div class="main-screen__figure-1"></div>
     	<div class="main-screen__info">
     		<div class="wrapper">
 				<div class="logo-line flex">
@@ -14,12 +15,15 @@
 				<h1 class="main-screen__caption caption">Факультет государственного и муниципального управления</h1>
 				<div class="small-caption">Курсы повышения квалификации и профессиональной переподготовки</div>
 				<a href="#" class="main-screen__button button button_blue">Смотреть все курсы</a>
-   			</div>
+       		</div>
     	</div>
     </div>
 	@@include('template/form.html')
     @@include('template/photo-info.html')
+    @@include('template/discount.html')
+    @@include('template/courses.html')
     @@include('template/reviews.html') 
+    @@include('template/license.html')   
     @@include('template/footer.html')          
 </body>
 <script src="/js/jquery-3.2.1.min.js"></script>
