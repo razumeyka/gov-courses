@@ -1,4 +1,5 @@
 @@include('./lib/jquery.fancybox.min.js')
+@@include('./lib/wpcf7.js')
 @@include('./lib/slider.js')
 
 $(document).ready(function(){
