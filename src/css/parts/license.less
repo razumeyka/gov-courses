@@ -1,29 +1,30 @@
 /*license_screen*/
 
-.license_screen {
+.license-screen {
     padding: 50px 0;
 }
 
-.license_screen .carousel {
+.license-screen__carousel {
     position: relative;
     max-width: 1155px;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
-.license_screen .carousel .carousel_wr{
+.carousel__inner{
     overflow: hidden;
 }
-.license_screen .carousel .review_wrapper {
+
+.carousel__wrapper {
     width: 133%;
     overflow: hidden;
 	padding: 20px 0;
 }
 
-.license_screen .review_container {
+.carousel__container {
     width: 100%;
 }
 
-.license_screen .carousel .long{
+.carousel .long{
 	width:1000%;
 	-webkit-transition: all 0.15s linear 0s;
     -moz-transition: all 0.15s linear 0s;
@@ -31,14 +32,14 @@
     transition: all 0.15s linear 0s;
 }
 
-.license_screen .carousel .one_doc{
+.carousel .one_doc{
     padding: 0 23px;
     box-sizing: border-box;
     float: left;
     width: 2.5%;
 }
 
-.license_screen .carousel .one_doc .inner{
+.carousel .one_doc .inner{
 	width: 100%;
     box-sizing: border-box;
     border: 10px solid rgb(247, 248, 250);
@@ -46,24 +47,55 @@
 	font-size: 0;
 }
 
-.license_screen .carousel .one_doc .content{
+.carousel .one_doc .content{
 	width: 100%;
 }
 
-.license_screen .carousel .control{
-    background: url('../images/sprites.svg') no-repeat -442px -559px;
-	width: 31px;
-	height: 48px;
-	position:absolute;
-    top: 43%;
+.carousel__controls {
+	justify-content: center;
+	margin: 20px auto;
+}
+
+.carousel__control{
+    background: url('../images/sprites.svg') no-repeat -59px -13px;
+	width: 29px;
+	height: 17px;
 	cursor:pointer;
 }
 
-.license_screen .carousel .control.prev{
-	left: -43px;
+.carousel__control.next{
+    background-position: -98px -13px;
 }
 
-.license_screen .carousel .control.next{
-    background-position: -537px -559px;
-	right: -43px;
+.carousel__points {
+	margin: 0 25px;
 }
+
+.carousel__point {
+	border-radius: 50%;
+	background-color: rgb(145, 142, 149);
+	width: 13px;
+	height: 13px;
+	margin: auto 7px;
+}
+
+/*media*/ 
+
+@media screen and (max-width: 1279px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+	.license_screen .carousel__wrapper {
+		width: 200%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 639px) {
+    
+}
+
