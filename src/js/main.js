@@ -1,6 +1,7 @@
 @@include('./lib/jquery.fancybox.min.js')
 @@include('./lib/wpcf7.js')
 @@include('./lib/slider.js')
+@@include('./lib/slick.min.js')
 
 $(document).ready(function(){
     
@@ -33,13 +34,24 @@ $(document).ready(function(){
 	};
 	setInterval(function(){topslider_change()},3000);
 	
+// slick
+	
+	$('.reviews__items').slick({
+		centerMode: true,
+		centerPadding: '20%',
+		slidesToShow: 1,
+		dots: true
+      });
+	
 // licenses
 	
     $('.license-screen .next, .license-screen .prev').click(function(){
         console.log('click carousel');
-        var countslides=jQuery('.carousel__container').children().children().length-Math.round(parseFloat(jQuery('.carousel__wrapper').css('width'))/parseFloat(jQuery('.one_doc').css('width')));
+        var countslides=jQuery('.carousel__container').children().children().length
+		var test=Math.round(parseFloat(jQuery('.carousel__wrapper').css('width'))/parseFloat(jQuery('.one_doc').css('width')));
         var slide=$(this).closest('.carousel').data('slide');
         console.log(countslides);
+		console.log(test);
         if($(this).hasClass('next')){
             slide++;
             if(slide>countslides)slide=0;
