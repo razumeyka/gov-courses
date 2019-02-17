@@ -35,7 +35,7 @@ $(document).ready(function(){
 	
 // licenses
 	
-    $('.license_screen .next, .license_screen .prev').click(function(){
+    $('.license-screen .next, .license-screen .prev').click(function(){
         console.log('click carousel');
         var countslides=jQuery('.carousel__container').children().children().length-Math.round(parseFloat(jQuery('.carousel__wrapper').css('width'))/parseFloat(jQuery('.one_doc').css('width')));
         var slide=$(this).closest('.carousel').data('slide');
@@ -48,7 +48,7 @@ $(document).ready(function(){
             slide--;
             if(slide<0)slide=countslides;
         }
-         $(this).closest('.carousel').find('.long').css('margin-left','-'+(slide*25)+'%');
+         $(this).closest('.carousel').find('.carousel__long').css('margin-left','-'+(slide*25)+'%');
 		$(this).closest('.carousel').data('slide',slide);
     });
 	
