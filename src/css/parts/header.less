@@ -152,7 +152,7 @@
 		display: none;
 		height: auto;
 		position: absolute;
-		top: 188px;
+		top: 42px;
 		left: 0;
 		margin: 0;
 		width: 100%;
@@ -168,9 +168,14 @@
     
     header .menu li a {
         display: block;
+		color: #f5f5f5;
         border-bottom: 1px solid #f5f5f5;
         padding: 15px;
     }
+	
+	header .menu>li:first-child a {
+		padding: 15px;
+	}
     
     header .menu li:hover .sub-menu {
         display: none;
@@ -188,13 +193,14 @@
     header .sub-menu li a {
         color: #1453a1;;
     }	
+	
+	.phone {
+		margin: 5px 0;
+	}
 }
 
 @media screen and (max-width: 1023px) {
 	
-	header .menu {
-		top: 219px;
-	}
 }
 
 @media screen and (max-width: 767px) {

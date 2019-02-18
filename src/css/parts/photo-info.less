@@ -33,7 +33,7 @@
 .icon-items:before {
 	content: "";
 	background-color: rgb(255, 160, 43);
-	width: 6px;
+	width: 5px;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -91,7 +91,29 @@
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
-    
+    .photo-info__photo {
+		display: none;
+	}
+	
+	.photo-info__background {
+		display: none;
+	}
+	
+	.photo-info__info {
+		max-width: none;
+	}
+	
+	.icon-items {
+		padding: 32px 0 32px 110px;
+	}
+	
+	.icon-items:before {
+		left: 70px;
+	}
+	
+	.icon-items__description {
+		max-width: none;
+	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -103,5 +125,11 @@
 }
 
 @media screen and (max-width: 639px) {
-   
+   .icon-items__item {
+		flex-direction: column;
+	}
+	
+	.icon-items__icon {
+		margin: 0 0 15px;
+	}
 }

@@ -48,16 +48,12 @@
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
-    
-}
-
-@media screen and (max-width: 1023px) {
-    .photo-info__photo {
+    .discount__photo {
 		display: none;
 	}
 	
-	.photo-info__info {
-		max-width: none;
+	.discount__info {
+		width: 100%;
 	}
 	
 	.topslider_wrapper {
@@ -68,6 +64,19 @@
 	.start {
 		justify-content: center;
 	}
+	
+	.topslider__inner {
+		padding: 0 15px;
+	}
+	
+	.discount__button {
+		margin-right: 76px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	
+	
 }
 
 @media screen and (max-width: 767px) {
@@ -75,7 +84,11 @@
 }
 
 @media screen and (max-width: 639px) {
-    .topslider_wrapper {
-		height: 300px;
+	.topslider_wrapper {
+		height: 450px;
+	}
+	
+    .discount__button {
+		max-width: 250px;
 	}
 }

@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 	
 	$('.menu li.menu-item-has-children>a' ).click(function(e){
-		if(!$('.mobile-menu').is(':visible'))return;
+		if(!$('.burger').is(':visible'))return;
 		e.preventDefault();
 		$('.sub-menu').not($(this).closest('li').find('.sub-menu')).slideUp('300');
 		$(this).closest('li').find('.sub-menu').slideToggle('300');

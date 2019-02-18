@@ -66,11 +66,30 @@
 }
 
 @media screen and (max-width: 1023px) {
-    
+    .wpcf7-form {
+		flex-wrap: wrap;
+	}
+	
+	.wpcf7-form-control-wrap {
+		width: 50%;
+		padding: 10px;
+		border: none;
+	}
+	
+	.wpcf7-form-control {
+		border: 2px solid #e0e0e0;
+	}
+	
+	.button.form__button_home {
+		max-width: none;
+	}
 }
 
 @media screen and (max-width: 767px) {
-    
+    .wpcf7-form-control-wrap {
+		width: 100%;
+		padding: 10px 0;
+	}
 }
 
 @media screen and (max-width: 639px) {

@@ -85,7 +85,47 @@
 }
 
 
+/*media*/ 
 
+@media screen and (max-width: 1279px) {
+    .courses__item {
+		flex-direction: column;
+	}
+	
+	.courses__name {
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    .courses__detail_type, .courses__detail_hours {
+		display: none;
+	}
+	
+	.courses__details, .courses__name {
+		padding: 10px 15px;
+	}
+	
+	.courses__detail {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 639px) {
+	.courses__detail_price span {
+		font-size: 24px;
+	}
+	
+   .courses__button {
+		height: 50px;
+		line-height: 50px;
+		max-width: 140px;
+	}
+}
 
 
 
