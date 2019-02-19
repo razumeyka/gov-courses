@@ -1,11 +1,12 @@
 .photo-info {
-	padding: 80px 0 90px;
+	padding: 90px 0;
 	overflow: hidden;
 	position: relative;
 }
 
 .photo-info__background {
-    background: url(../../images/figure-2.svg) no-repeat left;
+    background: url(../../images/figure-2.svg) no-repeat;
+	background-position: -3px 0;
     width: 50%;
     height: 640px;
     position: absolute;
@@ -13,8 +14,13 @@
     right: 0;
 }
 
-.photo-info .wrapper {
-	position: relative;
+.photo-info__photo {
+    background: url(../../images/diploma-stone.png) no-repeat center;
+    width: 920px;
+    height: 800px;
+    position: absolute;
+    right: -286px;
+    bottom: 66px;
 }
 
 .photo-info__info {
@@ -75,16 +81,6 @@
 
 .icon-items__description {
 	font-size: 20px;
-	max-width: 400px;
-}
-
-.photo-info__photo {
-    background: url(../../images/diploma-stone.png) no-repeat center;
-    width: 920px;
-    height: 800px;
-    position: absolute;
-    right: -324px;
-    bottom: -25px;
 }
 
 
@@ -110,10 +106,6 @@
 	.icon-items:before {
 		left: 70px;
 	}
-	
-	.icon-items__description {
-		max-width: none;
-	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -121,7 +113,13 @@
 }
 
 @media screen and (max-width: 767px) {
+	.icon-items {
+		padding: 32px 0 32px 40px;
+	}
     
+	.icon-items:before {
+		left: 0;
+	}
 }
 
 @media screen and (max-width: 639px) {

@@ -1,10 +1,24 @@
 /*slider*/
 
 .slider {
-    position: relative;
-    width: 60%;
+    position: absolute;
+	top: 0;
+	right: 0;
+    width: 65%;
     height: 820px;
     margin: 0 0 0 auto;
+}
+
+.slider:before {
+	content: "";
+    background: url(../images/figure-1.svg) no-repeat;
+	background-position: 100% 25%;
+    height: 100%;
+	width: 500px;
+    position: absolute;
+    top: 0;
+    left: -217px;
+	z-index: 1;
 }
 
 .slider .slide {

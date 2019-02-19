@@ -38,7 +38,7 @@ $(document).ready(function(){
 	
 	$('.reviews__items').slick({
 		centerMode: true,
-		centerPadding: '20%',
+		centerPadding: '18.5%',
 		slidesToShow: 1,
 		dots: true
       });

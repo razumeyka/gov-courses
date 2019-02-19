@@ -16,25 +16,24 @@
 
 .main-screen {
 	background: #113b7f;
+	height: 820px;
 	position: relative;
 }
 
-.main-screen__info {
-	padding: 56px 0;
-	position: absolute;
-	width: 100%;
-    position: absolute;
-    top: 0;
-	z-index: 1;
+.main-screen .wrapper {
+	position: relative;
+	z-index: 2;
 }
 
-.main-screen__figure-1 {
-    background: url(../images/figure-1.svg) no-repeat center right ;
-    height: 100%;
+.main-screen__info {
+	position: static;
+	padding: 56px 0;
 	width: 100%;
-    position: absolute;
-    top: 0;
-    right: 45%;
+    max-width: 550px;
+}
+
+.main-screen__caption {
+    margin: 70px 0 35px;
 }
 
 .logo {
@@ -49,6 +48,10 @@
     color: #fff;
     max-width: 300px;
     margin: auto 0 auto 20px;;
+}
+
+.main-screen__caption {
+	max-width: 550px;
 }
 
 .main-screen__button {
