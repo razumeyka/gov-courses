@@ -62,7 +62,16 @@
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
-    
+    .main-screen .wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.logo-line {
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -74,5 +83,7 @@
 }
 
 @media screen and (max-width: 639px) {
-    
+    .main-screen__button {
+		margin-top: 23px;
+	}
 }
