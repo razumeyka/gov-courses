@@ -35,13 +35,22 @@ $(document).ready(function(){
 	setInterval(function(){topslider_change()},3000);
 	
 // slick
+
+	if ( $(window).width() > 767 ) {
+		$('.reviews__items').slick({
+			slidesToShow: 1,
+			dots: true,
+			centerMode: true,
+			centerPadding: '18.5%'
+		});
+	} 	else {
+			$('.reviews__items').slick({
+				slidesToShow: 1,
+				dots: true,
+				centerMode: false,
+			});
+		}
 	
-	$('.reviews__items').slick({
-		centerMode: true,
-		centerPadding: '18.5%',
-		slidesToShow: 1,
-		dots: true
-      });
 	
 // licenses
 	
