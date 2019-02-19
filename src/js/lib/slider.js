@@ -2,14 +2,15 @@ var slide=0;
 var timer=null;
 
 function setSlide($slider,index){
+	console.log(index);
 	slide=index;
 	$slider.find('.slide.active').one('transitionend webkitTransitionEnd oTransitionEnd',function(){
         if($(this).hasClass('active'))return;
-		$(this).css('display','none');
+		//$(this).css('display','none');
 	});
 	$slider.find('.slide').removeClass('active');
 	$slider.find('.controls li').removeClass('active');
-	$slider.find('.slide').eq(index).addClass('active').css({'display':'block'});
+	$slider.find('.slide').eq(index).addClass('active');
 	$slider.find('.controls li').eq(index).addClass('active');
 }
 function nextslide($slider){
