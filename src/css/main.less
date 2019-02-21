@@ -22,7 +22,6 @@
 
 .main-screen .wrapper {
 	position: relative;
-	z-index: 2;
 }
 
 .main-screen__info {
@@ -46,12 +45,9 @@
 .logo-line__text {
     font-size: 18px;
     color: #fff;
+	text-align: left;
     max-width: 300px;
-    margin: auto 0 auto 20px;;
-}
-
-.main-screen__caption {
-	max-width: 550px;
+    margin: auto 0 auto 20px;
 }
 
 .main-screen__button {
@@ -99,6 +95,16 @@
 }
 
 @media screen and (max-width: 639px) {
+	
+	.logo-line {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.logo-line__text {
+		text-align: center;
+	}
+	
     .main-screen__button {
 		margin-top: 23px;
 	}
