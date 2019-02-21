@@ -83,6 +83,7 @@ p {
 	color: rgb(255, 255, 255);
 	position: relative;
 	padding: 0 93px 0 15px;
+	letter-spacing: 1px;
 }
 
 .button_blue:after {
@@ -95,6 +96,14 @@ p {
     right: -2px;
 }
 
+.button_blue:hover{
+	background-color: #1453a1;
+}
+
+.button_blue:hover:after{
+	background-position: -136px 19px;
+}
+
 .button_orange {
     background-color: rgb(255, 160, 43);
 	height: 64px;
@@ -104,7 +113,12 @@ p {
 	color: rgb(255, 255, 255);
 	font-weight: 700;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }  
+
+.button_orange:hover{
+	background-color: #ff8d00;
+}
 
 /* caption */
 
@@ -147,12 +161,29 @@ p {
     .orange-line {
 		left: 15px;
 	}
+	
+	.caption {
+		font-size: 34px;
+	}
+	
+	.small-caption {
+		font-size: 20px;
+	}
+	
 }
 
 @media screen and (max-width: 639px) {
-    .button_blue {
-		max-width: 320px;
+  
+	.button_blue {
+		max-width: 330px;
+		font-size: 18px;
 	}
+	
+	p{
+		font-size: 20px;
+	}
+	
+	
 }
 
 

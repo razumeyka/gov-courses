@@ -17,11 +17,14 @@
 	margin-bottom: 30px;
 }
 
+.courses__item:hover{
+	box-shadow: 0 10px 16.2px 1.8px rgba(39,39,40,.1);
+}
+
 .courses__name {
 	box-sizing: border-box;
 	background: #113b7f;
-	font-size: 22px;
-	font-weight: 700;
+	font-size: 22px; 
 	color: rgb(255, 255, 255);
 	padding: 30px 45px;
 	display: flex;
@@ -94,6 +97,12 @@
 	
 	.courses__name {
 		max-width: none;
+		padding: 20px;
+		font-size: 20px; 
+	}
+	
+	.courses__details{
+		padding: 5px 20px 5px 10px; 
 	}
 }
 
@@ -104,15 +113,7 @@
 @media screen and (max-width: 767px) {
     .courses__detail_type, .courses__detail_hours {
 		display: none;
-	}
-	
-	.courses__details, .courses__name {
-		padding: 10px 15px;
-	}
-	
-	.courses__detail {
-		padding: 0;
-	}
+	} 
 }
 
 @media screen and (max-width: 639px) {
@@ -124,7 +125,13 @@
 		height: 50px;
 		line-height: 50px;
 		max-width: 140px;
+		font-size: 15px;
 	}
+	
+	.caption-2 {
+		font-size: 34px;
+	}
+	
 }
 
 

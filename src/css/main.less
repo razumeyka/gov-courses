@@ -38,6 +38,7 @@
 .logo {
 	display: block;
     background: url(../../images/logo.svg) no-repeat center;
+	background-size: contain;
     width: 114px;
     height: 100px;
 }
@@ -66,15 +67,30 @@
 	}
 	
 	.logo-line {
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.logo-line__text {
+		text-align: center;
+		margin:0;
+		font-size: 15px;
+		line-height: 1.3;
+	} 
+	
+	.logo{
+		width: 100px;
+		height: 94px;
+		margin-bottom: 5px;
 	}
 	
 	.main-screen {
 		height: auto;
+		background: #113b7fe6;
 	}
 	
     .main-screen__info {
-		padding: 30px 0 140px;
+		padding: 30px 0 160px;
 	}
 	
 	.main-screen__caption {
@@ -82,8 +98,11 @@
 	}
 	
 	.main-screen__button {
-		margin-top: 35px;
+		margin-top: 55px;
 	}
+	
+	
+	
 }
 
 @media screen and (max-width: 1023px) {
@@ -91,21 +110,18 @@
 }
 
 @media screen and (max-width: 767px) {
-    
+ 
+	.logo-line__text{
+		display: none;
+	}
+	
+	.main-screen__caption{
+		margin-top: 15px;
+	}
+ 
 }
 
 @media screen and (max-width: 639px) {
 	
-	.logo-line {
-		flex-direction: column;
-		align-items: center;
-	}
 	
-	.logo-line__text {
-		text-align: center;
-	}
-	
-    .main-screen__button {
-		margin-top: 23px;
-	}
 }

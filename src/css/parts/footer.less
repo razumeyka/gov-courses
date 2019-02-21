@@ -57,17 +57,24 @@
 	color: rgb(255, 255, 255);
 }
 
+.second-footer .menu>li a:hover {
+    background: none;
+	text-decoration: underline;
+}
+
+
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
+   
+   .first-footer{
+		padding: 40px 0;
+   }
+   
    .first-footer .wrapper {
 		flex-direction: column;
 		align-items: center;
-	}
-	
-	.first-footer__contacts {
-		margin-bottom: 20px;
-	}
+	} 
 	
 	.second-footer .navbar {
 		display: flex;
@@ -81,6 +88,11 @@
 	.second-footer .menu>li:first-child a {
 		padding: 15px 20px;
 	}
+	
+	.first-footer__button{
+		display: none;
+	}
+	
 }
 
 @media screen and (max-width: 1023px) {
@@ -109,10 +121,15 @@
 		margin: 10px 0;
 	}
 	
-	.menu li {
+	footer .menu li {
 		float: none;
 		text-align: center;
 	}
+	
+	footer .menu{
+		margin: 15px 0;
+	}
+	
 }
 
 @media screen and (max-width: 639px) {

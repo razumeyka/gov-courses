@@ -7,6 +7,7 @@ header{
     display: block;
     margin: 0;
     padding: 0;
+	margin-left: -25px;
 }
 
 .menu li {
@@ -24,8 +25,8 @@ header{
     padding: 15px 25px;
 }
 
-.menu>li:first-child a {
-	padding: 15px 25px 15px 0;
+.menu>li a:hover{
+	background: #eaeaea;
 }
 
 .sub-menu {
@@ -79,15 +80,14 @@ header{
 
 .burger span, .burger span::before, .burger span::after {
     display: block;
-    cursor: pointer;
-    border-radius: 5px;
-    height: 3px;
+    cursor: pointer; 
+    height: 4px;
     width: 30px;
-    background: rgb(0,0,0);
+    background: #000;
     position: absolute;
-    top: 10px;
+    top: 9px;
     right: 5px;
-    transition: all 200ms ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .burger span::before {
@@ -156,9 +156,9 @@ header{
 		margin: 0;
 		width: 100%;
 		text-align: center;
-		background: rgba(20,83,161,.8);
-		z-index: 11;
-		padding: 0;
+		background: #1453a1;
+		z-index: 9999;
+		padding: 15px 0;
 	}
     
     header .menu li {
@@ -166,19 +166,18 @@ header{
     }
     
     header .menu li a {
-        display: block;
-		color: #f5f5f5;
-        border-bottom: 1px solid #f5f5f5;
-        padding: 15px;
-    }
-	
-	header .menu>li:first-child a {
-		padding: 15px;
-	}
+		display: block;
+		color: #ffffff; 
+		padding: 20px 15px;
+	} 
     
     header .menu li:hover .sub-menu {
         display: none;
     }
+	
+	.menu>li a:hover{
+		background: none;
+	}
     
     header .menu li .sub-menu {
         position: static;
