@@ -1,0 +1,163 @@
+/*article page*/
+
+.course-info {
+	background: #f7f7f7; 
+    padding: 30px 40px;
+    overflow: hidden;
+    margin: 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.course-info__type {
+    flex: 1;
+    font-size: 18px;
+    color: #000; 
+}
+
+.course-info__hours {
+    margin: auto 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.course-info__price {
+	font-size: 14px;
+    color: #08070a;
+    font-weight: 700;
+    display: flex;
+	margin-left: 30px;
+    align-items: center;
+}
+
+.course-info__price span{
+	font-size: 30px;
+    color: #113b7f;
+    padding: 0 5px;
+}
+
+.info-bordered {
+	border-bottom: 1px solid #cccccc;
+    padding: 30px 0 35px; 
+}
+
+.info-bordered:first-child{
+	padding-top:0;
+}
+
+.info-bordered__caption {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.info-bordered__description {
+	margin: 10px 0;
+}
+
+.info-bordered__button{
+	margin-top: 10px;
+}
+
+.inner-page{
+	padding: 40px 0 100px;
+}
+
+.inner-caption {
+	font-size: 40px;
+    font-weight: 900;
+    margin: 0 auto 30px;
+    line-height: 1.2;
+}
+
+.inner-page img{
+	max-width:100%;
+	height: auto;
+}
+
+.inner-page p{
+	font-size: 20px;
+}
+
+/* right column form*/
+
+.right-block .form{
+	padding: 35px 30px 45px;
+	margin: 0px 10px 20px;
+}
+
+.right-block .wpcf7-form{
+	flex-direction: column;
+}
+
+.right-block .wpcf7-form-control-wrap{
+    width: 100%;
+    margin: 6px 0;
+    border: 2px solid #e0e0e0;
+	padding: 0;
+}
+
+.right-block .wpcf7-form-control-wrap_button{
+	border: none;
+    margin: 20px 0 0;
+}
+
+.right-block .form textarea{
+	height: 90px;
+	min-height: 90px;
+	resize: vertical;
+}
+
+.right-block .form__caption{
+	margin-bottom: 15px;
+}
+
+.right-block .wpcf7-form-control{
+	border: none;
+}
+
+.right-block .form .button_orange{
+	max-width: 100%;
+}
+
+ 
+@media screen and (max-width: 1279px) {
+
+	.course-info{
+		padding: 30px 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.course-info{ 
+		justify-content: center;
+	}
+
+	.course-info__type{
+		min-width: 100%; 
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 639px) {
+
+	.inner-caption {
+		font-size: 34px;
+	}
+
+	.inner-page p {
+		font-size: 18px;
+	}
+
+	.right-block .form {
+		padding: 35px 20px 45px;
+	}
+	
+}
+

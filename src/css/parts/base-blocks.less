@@ -120,6 +120,32 @@ p {
 	background-color: #ff8d00;
 }
 
+.button_icon{
+    border: 2px solid #113b7f;
+    color: #113b7f;
+    font-weight: 700;
+    font-size: 19px; 
+    padding: 15px 20px 15px 55px;
+	position: relative;
+}
+
+.button_icon:before{
+	content: '';
+    position: absolute;
+    top: 18px;
+    left: 8px;
+    width: 40px;
+    height: 22px;
+    background: url(../images/sprites.svg) no-repeat -53px -11px;
+}
+
+.button_icon:hover{
+    background: #f5f5f5;
+}
+
+.button_icon-back{
+	background-position:-53px -11px;
+}
 /* caption */
 
 .caption {
@@ -145,16 +171,56 @@ p {
     left: 85px;
 }
 
+/* double-colums  */
+
+.double-colums {
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-block {
+    flex: 1;
+	max-width: 810px;
+	overflow: hidden;
+}
+
+.right-block {
+    width: 340px;
+    margin-left: 50px;
+}
+
+
+
 /*media*/ 
 
 @media screen and (max-width: 1279px) {
 	.wrapper {
 		padding: 0 15px;
 	}
+	
+	.right-block{
+		margin-left: 30px;
+	}
+	
+	.left-block{
+		max-width: 100%;
+	}
+	
 }
 
 @media screen and (max-width: 1023px) {
-    
+
+    .double-colums {
+		flex-direction: column;
+	}
+	
+	.right-block {
+		margin: 50px auto 0;
+		width: 100%;
+		max-width: 400px;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
