@@ -2,6 +2,7 @@
 @@include('./lib/wpcf7.js')
 @@include('./lib/slider.js')
 @@include('./lib/slick.min.js')
+@@include('./lib/sticky-kit.js')
 
 $(document).ready(function(){
     
@@ -70,12 +71,15 @@ $(document).ready(function(){
          $(this).closest('.carousel').find('.carousel__long').css('margin-left','-'+(slide*25)+'%');
 		$(this).closest('.carousel').data('slide',slide);
     });
-
+	var ww=window.innerWidth;
+	if(ww>1200){
+		$(".inner-page__form").stick_in_parent();
+	}
 	
 // mask
 	
     $('input[type="tel"]').mask("8-999-999-99-99");
 	
-	
+
 
 }); 
